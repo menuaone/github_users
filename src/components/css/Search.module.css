@@ -1,0 +1,102 @@
+:global body[data-theme=light] {
+  --search-bg: var(--white);
+  --search-color: var(--gray-300);
+  --search-placeholder-color: var(--gray-100);
+  --search-shadow: var(--shadow);
+}
+:global body[data-theme=dark] {
+  --search-bg: var(--gray-400);
+  --search-color: var(--white);
+  --search-placeholder-color: var(--gray-100);
+  --search-shadow: unset;
+}
+
+.search {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 10px 10px 16px;
+  background-color: var(--search-bg, white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: var(--search-shadow);
+          box-shadow: var(--search-shadow);
+  border-radius: 15px;
+}
+@media (min-width: 767px) {
+  .search {
+    padding: 10px 10px 10px 30px;
+  }
+}
+.search > button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.label {
+  cursor: poiner;
+}
+
+.textField {
+  padding: 0 10px;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  height: 60px;
+  max-width: calc(100% - 100px - 20px);
+  border: none;
+  color: var(--search-color);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  cursor: pointer;
+  background-color: var(--search-bg);
+}
+.textField::-webkit-input-placeholder {
+  color: var(--search-placeholder-color);
+}
+.textField::-moz-placeholder {
+  color: var(--search-placeholder-color);
+}
+.textField:-ms-input-placeholder {
+  color: var(--search-placeholder-color);
+}
+.textField::-ms-input-placeholder {
+  color: var(--search-placeholder-color);
+}
+.textField::placeholder {
+  color: var(--search-placeholder-color);
+}
+.textField:focus {
+  outline: none;
+}
+@media (min-width: 767px) {
+  .textField {
+    margin: 0 15px;
+    font-size: 1.25rem;
+    margin: 0 20px;
+  }
+}
+
+.error {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  color: var(--error-color);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+@media (min-width: 767px) {
+  .error {
+    right: 120px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    bottom: unset;
+  }
+}

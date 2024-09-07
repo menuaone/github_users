@@ -1,0 +1,2 @@
+// фасад
+export * from './user';
