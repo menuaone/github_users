@@ -1,10 +1,18 @@
+_Just a simple searcher of GitHub users. Write username into the search line and get a user._
+
 This app made by using React, TypeScript, SCSS.
-Just a simple searcher of GitHub users. Write username into the search line and get a user.
 
 Menua Agamirov, 2024.
 
-### `npm start`
+### `NPM Packages`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+app created create-react-app
+react-router-dom  
+generate-react-cli  
+typescript  
+
+
+_App work presentation:_
+
+https://github.com/user-attachments/assets/5f5fce93-3603-4239-8696-3b8a8c62e718
 
