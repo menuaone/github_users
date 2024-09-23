@@ -6,7 +6,7 @@ Menua Agamirov, 2024.
 
 ### `NPM Packages`
 
-app created create-react-app
+create-react-app  
 react-router-dom  
 generate-react-cli  
 typescript  
