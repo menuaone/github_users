@@ -1,5 +1,7 @@
 _Just a simple searcher of GitHub users. Write username into the search line and get a user._
 
+getMyNewTest
+
 This app made by using React, TypeScript, SCSS.
 
 Menua Agamirov, 2024.
